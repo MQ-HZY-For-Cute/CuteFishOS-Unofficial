@@ -1,0 +1,3 @@
+lib/udev/rules.d/61-kde-bluetooth-rfkill.rules
+usr/share/qlogging-categories5/bluezqt.categories
+usr/share/qlogging-categories5/bluezqt.renamecategories

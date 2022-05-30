@@ -1,0 +1,585 @@
+bluez-qt (5.80.0-0ubuntu1) hirsute; urgency=medium
+
+  * New upstream release (5.80.0)
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Thu, 18 Mar 2021 11:05:48 +0000
+
+bluez-qt (5.79.0-0ubuntu1) hirsute; urgency=medium
+
+  * New upstream release (5.79.0)
+
+ -- Rik Mills <rikmills@kde.org>  Sat, 13 Feb 2021 12:19:15 +0000
+
+bluez-qt (5.78.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Drop the 'testsuite' autopkgtest, as it does not test the installed
+    packages.
+  * Drop the unused debian/meta/ stuff.
+  * Run the test suite at build time, since it seems to work fine:
+    - add the dbus-x11, xauth, and xvfb build dependencies
+    - run dh_auto_test using xvfb-run, and dbus-run-session
+    - disable the fixfilepath reproducibility feature, as it breaks
+      QFINDTESTDATA
+  * Remove the unused ${shlibs:Depends} substvar from libkf5bluezqt-data, and
+    libkf5bluezqt-doc.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 18 Jan 2021 14:15:11 +0100
+
+bluez-qt (5.78.0-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Norbert Preining <norbert@preining.info>  Sun, 17 Jan 2021 12:02:17 +0900
+
+bluez-qt (5.78.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.78.0).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 13 Jan 2021 10:32:40 +0900
+
+bluez-qt (5.77.0-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 22 Dec 2020 10:33:32 +0900
+
+bluez-qt (5.77.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * Bump Standards-Version to 4.5.1 (No changes needed).
+  * New upstream release (5.77.0).
+  * Update build-deps and deps with the info from cmake.
+  * Add myself to Uploaders.
+  * Update maintainer to Debian Qt/KDE Maintainers.
+  * Update symbols.
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 18 Dec 2020 10:03:51 +0900
+
+bluez-qt (5.74.0-2) unstable; urgency=medium
+
+  * Team upload to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 19 Oct 2020 23:13:33 +0200
+
+bluez-qt (5.74.0-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (5.74.0).
+  * Update build-deps and deps with the info from cmake.
+  * Add renamecategories file to libkf5bluezqt-data.
+  * Update repository related entries to metadata file.
+  * Update Bug-* entries to metadata file.
+  * Update symbols from build for 5.74.0.
+
+ -- Sandro Knauß <hefee@debian.org>  Sun, 27 Sep 2020 17:44:15 +0200
+
+bluez-qt (5.70.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Scarlett Moore ]
+  * Update all upstream addresses to reflect move to
+    invent.kde.org.
+    - Update Homepage in control to invent as projects
+      is dead.
+    - Update Source in copyright to invent address.
+    - Update upstream metadata to invent address.
+  * Add bug info to upstream metadata.
+  * Update compat to 13.
+  * Fix duplicate long description in control file.
+
+  [ Sandro Knauß ]
+  * New upstream release (5.70.0).
+  * Update build-deps and deps with the info from cmake.
+  * Wrap long lines in changelog entries: 5.21.0-1.
+  * Set field Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 26 May 2020 23:55:55 +0200
+
+bluez-qt (5.69.0-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Bump compat level to 12.
+  * Bump Standards-Version to 4.5.0 (No changes needed).
+  * New upstream release (5.69.0).
+  * Update build-deps and deps with the info from cmake.
+  * Adopt renaming of qtlogging file.
+  * Get rid of debug-symbol-migration package.
+  * Add Rules-Requires-Root field to control.
+  * Update symbols from build for 5.69.0.
+  * Enable hardening all.
+  * Add Build-Depends-Package to symbols file.
+  * Remove COPYING.LIB listed in copyright file.
+  * Remove not needed injection of linker flags.
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 30 Apr 2020 00:57:38 +0200
+
+bluez-qt (5.62.0-1) unstable; urgency=medium
+
+  * Update reprotest args variable
+  * New upstream release (5.62.0).
+  * Update build-deps and deps with the info from cmake
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 20 Sep 2019 10:12:49 -0700
+
+bluez-qt (5.61.0-1) experimental; urgency=medium
+
+  [ Scarlett Moore ]
+  * Build-Depend on qttools5-dev to fix a cross build failure
+    (see #915122 for more info).
+
+  [ Maximiliano Curia ]
+  * Salsa CI automatic initialization by Tuco
+  * New upstream release (5.61.0).
+  * Ignore reprotest build path variations
+  * Update symbols files.
+  * Update build-deps and deps with the info from cmake
+  * Add missing version to maintscript
+  * Release to experimental
+
+  [ Jonathan Riddell ]
+  * moved qdebug files
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 09 Sep 2019 21:10:05 +0100
+
+bluez-qt (5.54.0-1) unstable; urgency=medium
+
+  * New upstream release (5.52.0).
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (5.53.0).
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (5.54.0).
+  * Update build-deps and deps with the info from cmake
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 17 Jan 2019 19:26:14 -0300
+
+bluez-qt (5.51.0-1) unstable; urgency=medium
+
+  * New upstream release (5.50.0).
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (5.51.0).
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files.
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 07 Nov 2018 17:16:17 +0100
+
+bluez-qt (5.49.0-1) unstable; urgency=medium
+
+  * New upstream release (5.48.0).
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (5.49.0).
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files.
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 17 Aug 2018 16:17:57 +0200
+
+bluez-qt (5.47.0-1) unstable; urgency=medium
+
+  * New upstream release (5.47.0).
+  * Update build-deps and deps with the info from cmake
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 15 Jun 2018 12:07:49 +0200
+
+bluez-qt (5.46.0-1) unstable; urgency=medium
+
+  * New upstream release (5.46.0).
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 17 May 2018 22:14:15 +0200
+
+bluez-qt (5.45.0-1) unstable; urgency=medium
+
+  * New upstream release (5.45.0).
+  * Update build-deps and deps with the info from cmake
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 05 May 2018 08:09:52 +0200
+
+bluez-qt (5.44.0-1) sid; urgency=medium
+
+  * New upstream release (5.44.0).
+  * Update build-deps and deps with the info from cmake
+  * Release to sid
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 21 Mar 2018 14:40:13 +0100
+
+bluez-qt (5.43.0-1) experimental; urgency=medium
+
+  * Use the salsa canonical urls
+  * New upstream release (5.43.0).
+  * Update build-deps and deps with the info from cmake
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 26 Feb 2018 11:42:54 +0100
+
+bluez-qt (5.42.0-2) sid; urgency=medium
+
+  * New revision
+  * Release to sid
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 10 Feb 2018 11:28:23 +0100
+
+bluez-qt (5.42.0-1) experimental; urgency=medium
+
+  * New upstream release (5.42.0).
+  * Add link options as-needed
+  * Bump debhelper build-dep and compat to 11.
+  * Build without build_stamp
+  * Update install files
+  * Update build-deps and deps with the info from cmake
+  * Bump Standards-Version to 4.1.3.
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 02 Feb 2018 12:04:24 +0100
+
+bluez-qt (5.41.0-1) experimental; urgency=medium
+
+  * New upstream release (5.41.0). (Closes: #860269)
+  * Update build-deps and deps with the info from cmake
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 15 Dec 2017 10:41:55 -0300
+
+bluez-qt (5.41.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 08 Dec 2017 14:43:52 +0000
+
+bluez-qt (5.40.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 10 Nov 2017 12:55:28 +0000
+
+bluez-qt (5.39.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Sun, 15 Oct 2017 11:38:34 +0000
+
+bluez-qt (5.38.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 11 Sep 2017 13:27:53 +0000
+
+bluez-qt (5.37.0-2) sid; urgency=medium
+
+  * New revision
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Release to sid
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 03 Sep 2017 09:57:24 +0200
+
+bluez-qt (5.37.0-1) experimental; urgency=medium
+
+  * Build the qch files
+  * Add libkf5bluezqt-doc package for the qch files
+  * New upstream release (5.37.0).
+  * Update build-deps and deps with the info from cmake
+  * Update symbols file
+  * Bump Standards-Version to 4.0.1.
+  * wrap-and-sort
+  * Set section for the doc package
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 16 Aug 2017 10:41:47 +0200
+
+bluez-qt (5.37.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 11 Aug 2017 15:11:52 +0000
+
+bluez-qt (5.36.0-1) experimental; urgency=medium
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.35.0).
+  * Bump Standards-Version to 4.0.0.
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files.
+  * watch: Use https uris
+  * New upstream release (5.36.0).
+  * Update build-deps and deps with the info from cmake
+
+  [ Raymond Wooninck ]
+  * Add signing key
+  * also include signing-key
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 09 Jul 2017 23:40:55 +0200
+
+bluez-qt (5.36.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 10 Jul 2017 17:10:17 +0000
+
+bluez-qt (5.35.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Sun, 11 Jun 2017 20:36:02 +0000
+
+bluez-qt (5.34.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Sun, 14 May 2017 17:44:08 +0000
+
+bluez-qt (5.33.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 07 Apr 2017 16:21:29 +0000
+
+bluez-qt (5.32.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Sun, 12 Mar 2017 13:20:52 +0000
+
+bluez-qt (5.31.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 13 Feb 2017 14:33:54 +0000
+
+bluez-qt (5.30.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 16 Jan 2017 13:38:04 +0000
+
+bluez-qt (5.29.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 09 Dec 2016 19:06:23 +0000
+
+bluez-qt (5.28.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files with the buildds logs.
+
+  [ Maximiliano Curia ]
+  * New upstream relase (5.28)
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 18 Nov 2016 15:56:39 +0100
+
+bluez-qt (5.28.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Nov 2016 09:45:17 +0000
+
+bluez-qt (5.27.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update symbols files with the buildds logs.
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * New upstream relase (5.27)
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 15 Oct 2016 16:47:05 +0200
+
+bluez-qt (5.27.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Sat, 08 Oct 2016 11:28:42 +0000
+
+bluez-qt (5.26.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update symbols files with the buildds results
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * Replace dbus-launch by dbus-run-session in tests.
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 29 Sep 2016 11:54:25 +0200
+
+bluez-qt (5.26.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 12 Sep 2016 08:36:00 +0000
+
+bluez-qt (5.25.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update symbols files from buildds logs (5.23.0-1).
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files
+
+  [ Maximiliano Curia ]
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 18 Aug 2016 17:18:18 +0200
+
+bluez-qt (5.25.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Sat, 13 Aug 2016 20:15:14 +0000
+
+bluez-qt (5.24.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 11 Jul 2016 07:41:54 +0000
+
+bluez-qt (5.23.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 18 Jun 2016 08:01:51 +0200
+
+bluez-qt (5.23.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 13 Jun 2016 09:39:03 +0000
+
+bluez-qt (5.22.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 19 May 2016 00:13:24 +0200
+
+bluez-qt (5.22.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 17 May 2016 07:35:51 +0000
+
+bluez-qt (5.21.0-1) experimental; urgency=medium
+
+  [ Maximiliano Curia ]
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer"
+    replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+  * Update acc test script
+  * Add a .gitattributes file to use dpkg-mergechangelogs
+  * uscan no longer supports more than one main upstream tarball being listed
+  * Drop Xephyr hack
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Bump Standards-Version to 3.9.8
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 06 May 2016 08:45:51 +0200
+
+bluez-qt (5.21.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 11 Apr 2016 09:22:50 +0000
+
+bluez-qt (5.20.0-0neon) wily; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 01 Apr 2016 11:03:51 +0000
+
+bluez-qt (5.19.0-1) experimental; urgency=medium
+
+  * New upstream release (5.19.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 13 Feb 2016 15:15:45 +0100
+
+bluez-qt (5.18.0-1) experimental; urgency=medium
+
+  * New upstream release (5.17.0).
+  * New upstream release (5.18.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 27 Jan 2016 13:33:14 +0100
+
+bluez-qt (5.16.0-1) unstable; urgency=medium
+
+  * New upstream release (5.16.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 30 Nov 2015 12:12:16 +0100
+
+bluez-qt (5.15.0-1) unstable; urgency=medium
+
+  * New upstream release (5.15.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 09 Oct 2015 19:15:46 +0200
+
+bluez-qt (5.15.0-0ubuntu1) wily; urgency=medium
+
+  [ Scarlett Clark ]
+  * Vivid backport
+
+  [ Jonathan Riddell ]
+  * new upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 07 Oct 2015 13:41:21 +0100
+
+bluez-qt (5.14.0-1) unstable; urgency=medium
+
+  * New upstream release (5.14.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 15 Sep 2015 13:47:29 +0200
+
+bluez-qt (5.14.0-0ubuntu1) wily; urgency=medium
+
+  * new upstream release
+
+ -- Clive Johnston <clivejo@aol.com>  Thu, 17 Sep 2015 13:08:27 +0100
+
+bluez-qt (5.13.0-1) unstable; urgency=medium
+
+  [ Pino Toscano ]
+  * Make all the any binaries as linux-any. BlueZ is Linux-specific, so there
+    is no point trying to build this on non-Linux platforms.
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.12.0).
+  * New upstream release (5.13.0).
+  * Follow upstream soversion bump.
+  * Update copyright file.
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 27 Aug 2015 18:13:52 +0200
+
+bluez-qt (5.13.0-0ubuntu1) wily; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 26 Aug 2015 11:34:53 +0100
+
+bluez-qt (5.3.1-1) unstable; urgency=medium
+
+  * Initial Debian release.
+  * New upstream release (5.3.1).
+
+  [ Harald Sitter ]
+  * Initial release.
+
+  [ Jonathan Riddell ]
+  * Plasma 5.3 beta
+  * Add upstream_udev-rules.diff
+  * new upstream release
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 30 Jun 2015 09:50:36 +0200

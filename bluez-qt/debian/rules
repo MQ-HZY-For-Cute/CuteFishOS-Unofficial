@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+# Disable fixfilepath, as it triggers build failures.
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all reproducible=-fixfilepath
+
+%:
+	dh $@ --with kf5,pkgkde_symbolshelper --buildsystem kf5 --without build_stamp
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DBUILD_QCH=ON
+
+override_dh_auto_test:
+	xvfb-run -a dbus-run-session dh_auto_test

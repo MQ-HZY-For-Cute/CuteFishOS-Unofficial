@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=cutefish
+Description=A forked breeze plymouth theme with cutefish logo
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/cutefish
+ScriptFile=/usr/share/plymouth/themes/cutefish/cutefish.script
+

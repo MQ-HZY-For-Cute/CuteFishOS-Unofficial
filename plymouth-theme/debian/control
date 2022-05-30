@@ -1,0 +1,11 @@
+Source: cutefish-plymouth-theme
+Section: misc
+Priority: optional
+Maintainer: Reion Wong <reion@cutefishos.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+
+Package: cutefish-plymouth-theme
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Plymouth theme for CutefishOS.

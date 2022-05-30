@@ -1,0 +1,7 @@
+name="vscode-deb"
+gives="code"
+version="1.60.2-1632313585"
+url="https://az764295.vo.msecnd.net/stable/7f6ab5485bbc008386c4386d08766667e155244e/${gives}_${version}_amd64.deb"
+description="Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux."
+hash="5d14d85ee907045b0fdc00d02d5f0f2a4336d37747f52862ed64fd52f92dec5b"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

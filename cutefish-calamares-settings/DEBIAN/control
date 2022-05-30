@@ -1,0 +1,15 @@
+Package: calamares-settings-cutefish
+Version: 2.0.9-1
+Architecture: all
+Maintainer: Maksym Titenko <titenko.m@gmail.com>
+Installed-Size: 916
+Depends: calamares (>= 3.2.14~), cryptsetup, keyutils, python3, qml-module-qtquick-window2, qml-module-qtquick2, squashfs-tools
+Conflicts: calamares-settings-cutefish
+Section: devel
+Priority: optional
+Homepage: https://github.com/cutefish-ubuntu
+Description: Cutefish Calamares Settings and Branding
+ This package contains the Calamares settings and branding for Cutefish.
+ As part of the branding the installer slideshow is contained within.
+ The settings ensure a proper Cutefish desktop is installed with the
+ Cutefish desktop environment.

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+if [ "x$1" = xremove ]; then
+	update-alternatives \
+		--remove default.plymouth /usr/share/plymouth/themes/cutefish-logo/cutefish-logo.plymouth
+
+        update-alternatives \
+		--remove text.plymouth /usr/share/plymouth/themes/cutefish-text/cutefish-text.plymouth
+fi
+
+#DEBHELPER#

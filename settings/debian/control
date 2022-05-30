@@ -1,0 +1,43 @@
+Source: cutefish-settings
+Section: devel
+Priority: optional
+Maintainer: CutefishOS <support@cutefishos.com>
+Build-Depends: cmake,
+               debhelper (>= 9),
+               extra-cmake-modules,
+               libicu-dev,
+               libcrypt-dev,
+               libx11-dev,
+               libxi-dev,
+               libxcursor-dev,
+               libfreetype6-dev,
+               libfontconfig1-dev,
+               libkf5networkmanagerqt-dev,
+               libkf5config-dev,
+               modemmanager-qt-dev,
+               qtbase5-dev,
+               libqt5x11extras5-dev,
+               qtdeclarative5-dev,
+               qtquickcontrols2-5-dev,
+               qttools5-dev,
+               qttools5-dev-tools,
+               libqapt-dev
+Standards-Version: 4.5.0
+Homepage: https://cutefishos.com
+
+Package: cutefish-settings
+Architecture: any
+Depends: qml-module-qtquick-controls2,
+         qml-module-qtquick2,
+         qml-module-qtquick-layouts,
+         qml-module-qt-labs-platform,
+         qml-module-qt-labs-settings,
+         qml-module-qtqml,
+         qml-module-qtquick-window2,
+         qml-module-qtquick-shapes,
+         qml-module-qtquick-dialogs,
+         qml-module-qtquick-particles2,
+         kscreen,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: CutefishOS Settings

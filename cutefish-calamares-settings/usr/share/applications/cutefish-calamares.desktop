@@ -1,0 +1,23 @@
+[Desktop Entry]
+Categories=Qt;System;
+Comment[ru_RU]=Calamares — System Installer
+Comment=Calamares — System Installer
+Exec=bash -c "export BROWSER='sudo -H -u cutefish firefox'; env QT_QPA_PLATFORMTHEME=gtk3 sudo -E calamares"
+GenericName[ru_RU]=Install Cutefish
+GenericName=Install Cutefish
+Icon=/etc/calamares/branding/cutefish/installer.png
+Keywords=installer;calamares;system;
+MimeType=
+Name[ru_RU]=Install Cutefish
+Name=Install Cutefish
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-Deepin-Vendor=user-custom
+X-KDE-SubstituteUID=false
+X-KDE-Username=

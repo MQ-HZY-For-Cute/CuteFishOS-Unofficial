@@ -1,0 +1,7 @@
+name="vscodium-deb"
+gives="codium"
+version="1.61.1"
+url="https://github.com/VSCodium/vscodium/releases/download/${version}/codium_${version}-1634282426_amd64.deb"
+description="Free/Libre Open Source Software Binaries of VSCode."
+hash="eb4d6a21ea91adae0c910a629e3e364d22606fa43877abdaccf1e2f17b494cef"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

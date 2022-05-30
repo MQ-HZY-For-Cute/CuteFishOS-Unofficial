@@ -1,0 +1,32 @@
+---
+componentName: cutefish
+
+windowExpanding:    normal
+windowSize: 800px,485px
+
+windowPlacement: center
+
+strings:
+    productName:         Cutefish
+    shortProductName:    Cutefish
+    version:             21.04
+    shortVersion:        hirsute
+    versionedName:       Cutefish
+    shortVersionedName:  Cutefish 21.04
+    bootloaderEntryName: ubuntu
+    productUrl:          https://github.com/cutefish-ubuntu
+    supportUrl:          https://github.com/cutefish-ubuntu
+
+images:
+    productLogo:         "logo.png"
+    productIcon:         "icon.png"
+    productWelcome:      "welcome.png"
+
+slideshow:               "show.qml"
+
+slideshowAPI:            1
+
+style:
+   sidebarBackground:    "#000000"
+   sidebarText:          "#FFFFFF"
+   sidebarTextSelect:    "#000000"

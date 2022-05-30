@@ -1,0 +1,7 @@
+name="google-chrome-deb"
+gives="google-chrome-stable"
+version="94.0.4606.81-1"
+url="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+description="The popular and trusted web browser by Google"
+hash="bfe97cd8d9f941e4a1e73f53d9de6bb54e73a007ee4ce5d4e94a9a65ae2d7fb4"
+maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"

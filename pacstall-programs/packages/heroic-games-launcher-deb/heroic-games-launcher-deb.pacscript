@@ -1,0 +1,7 @@
+name="heroic-games-launcher-deb"
+gives="heroic"
+version="1.10.2"
+url="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v${version}/heroic_${version}_amd64.deb"
+description="An Open Source alternative to the Epic Games launcher"
+hash="b7e3f91bdf7700304030707fb291a94dbb0575da71425fc68cdb31b3f36a779c"
+maintainer="D-Brox <BroxZuka@protonmail.com>"

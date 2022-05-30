@@ -1,0 +1,13 @@
+[Unit]
+Description=Cutefish Application Launch Booster
+After=display-manager.service
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/cutefish-appmotor --systemd
+Restart=always
+RestartSec=1
+OOMScoreAdjust=-250
+
+[Install]
+WantedBy=default.target

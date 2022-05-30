@@ -1,0 +1,19 @@
+Source: appmotor
+Section: devel
+Priority: optional
+Maintainer: CutefishOS <cutefishos@foxmail.com>
+Build-Depends: cmake,
+               debhelper (>= 9),
+			         qtbase5-dev,
+               qtdeclarative5-dev,
+               qtquickcontrols2-5-dev,
+               libsystemd-dev,
+               libcap-dev,
+               libdbus-1-dev
+Standards-Version: 4.5.0
+Homepage: https://github.com/cutefishos/appmotor
+
+Package: appmotor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: CutefishOS Appmotor

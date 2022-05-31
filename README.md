@@ -12,3 +12,12 @@ https://sourceforge.net/projects/cutefish-ubuntu/files/ISO/0.8/CutefishOS%20-%20
 
 https://sourceforge.net/projects/cutefish-ubuntu/files/ISO/0.8/CutefishOS%20-%20Ubuntu%20%28Ubiquity%20Installer%29/CutefishOS-Ubuntu_v0.8_%28Ubi%29.iso/download
 
+## Build
+
+```shell
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..
+make
+sudo make install
+```

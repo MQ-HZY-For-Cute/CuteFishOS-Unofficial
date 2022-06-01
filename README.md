@@ -5,6 +5,7 @@ Cutefishos is a distribution based on Debian, Ubuntu and archlinux. I have to ad
 Of course, you can also download the source code package in this repository and build it manually to install CuteFish DE into your system.
 Most software packages can be easily built into your system with Cmake tool. You can rest assured that we are very friendly to novices.
 
+Gitee:https://gitee.com/xiaojingjs/CuteFishOS-Unofficial
 ## Download
 https://packages.piscesys.com/cutefish/isos/0.8/cutefishos-0.8-beta-amd64.iso
 
